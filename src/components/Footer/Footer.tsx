@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import {
   FaPhone,
-  FaEnvelope,
-  FaInstagram,
+  // FaEnvelope,
+  // FaInstagram,
   FaBriefcase,
   FaUser,
 } from 'react-icons/fa';

@@ -15,6 +15,8 @@ import {
 import 'swiper/css/free-mode';
 import 'swiper/css/thumbs';
 import { Swiper as SwiperType } from 'swiper';
+import Image from 'next/image'; // ✅ Правильний імпорт
+
 
 interface ISliderConfig {
   id: string;
@@ -148,10 +150,12 @@ export default function Slider({ id }: SliderProps) {
               className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden"
             >
               <div className="relative w-full h-64 sm:h-80 md:h-96">
-                <img
+                <Image
                   src={imgUrl}
                   alt={`Slide ${index + 1}`}
+                  fill
                   className="w-full h-full object-cover rounded-lg"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="p-4 text-center">
