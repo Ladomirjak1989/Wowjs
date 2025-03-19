@@ -17,7 +17,6 @@ import 'swiper/css/thumbs';
 import { Swiper as SwiperType } from 'swiper';
 import Image from 'next/image'; // ✅ Правильний імпорт
 
-
 interface ISliderConfig {
   id: string;
   imgUrl: string;
